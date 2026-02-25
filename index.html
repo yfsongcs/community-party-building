@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新时代社区党建数字阵地</title>
+    <!-- 引入 Tailwind CSS (无需下载，直接通过网络加载样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 FontAwesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        // 配置党建主题色 (中国红)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        party: '#da251d', // 党旗红
+                        party_light: '#fde8e8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- 顶部导航/标题区 -->
+    <header class="bg-party text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6 text-center">
+            <h1 class="text-2xl md:text-3xl font-bold tracking-wider"><i class="fa-solid fa-flag text-yellow-300 mr-2"></i>某某社区党建数字阵地</h1>
+            <p class="mt-2 text-sm text-yellow-100 opacity-90">—— “传青声·习党风”实践团 共建项目</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        
+        <!-- 模块一：支部风采看板 (数字展示) -->
+        <section class="mb-10">
+            <h2 class="text-xl font-bold text-gray-800 border-l-4 border-party pl-3 mb-4">支部风采</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- 你可以在这里修改数字和文字 -->
+                <div class="bg-white p-4 rounded-lg shadow text-center border-t-2 border-party">
+                    <i class="fa-solid fa-users text-party text-2xl mb-2"></i>
+                    <div class="text-2xl font-bold text-gray-800">128<span class="text-sm font-normal text-gray-500">人</span></div>
+                    <div class="text-sm text-gray-500">注册党员</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center border-t-2 border-party">
+                    <i class="fa-solid fa-hands-holding-circle text-party text-2xl mb-2"></i>
+                    <div class="text-2xl font-bold text-gray-800">45<span class="text-sm font-normal text-gray-500">次</span></div>
+                    <div class="text-sm text-gray-500">年度志愿活动</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center border-t-2 border-party">
+                    <i class="fa-solid fa-clipboard-check text-party text-2xl mb-2"></i>
+                    <div class="text-2xl font-bold text-gray-800">32<span class="text-sm font-normal text-gray-500">件</span></div>
+                    <div class="text-sm text-gray-500">为民办实事</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center border-t-2 border-party">
+                    <i class="fa-solid fa-star text-party text-2xl mb-2"></i>
+                    <div class="text-2xl font-bold text-gray-800">5<span class="text-sm font-normal text-gray-500">名</span></div>
+                    <div class="text-sm text-gray-500">先锋模范标兵</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 模块二：先锋模范时光轴 (结合你们的调研访谈) -->
+        <section class="mb-10">
+            <h2 class="text-xl font-bold text-gray-800 border-l-4 border-party pl-3 mb-4">先锋模范事迹</h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <!-- 时光轴容器 -->
+                <div class="border-l-4 border-party_light ml-3 space-y-8">
+                    
+                    <!-- 事迹 1：修改这里的文字 -->
+                    <div class="relative pl-6">
+                        <div class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-party border-2 border-white"></div>
+                        <span class="text-xs font-bold text-party bg-party_light px-2 py-1 rounded">2024年2月</span>
+                        <h3 class="font-bold text-lg text-gray-800 mt-2">“传青声·习党风”微宣讲进社区</h3>
+                        <p class="text-gray-600 mt-1 text-sm leading-relaxed">实践团成员与社区党员共学《习近平著作选读》，开展主题座谈，探索支部共建新模式，注入青年新活力。</p>
+                    </div>
+
+                    <!-- 事迹 2：修改这里的文字 -->
+                    <div class="relative pl-6">
+                        <div class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-party border-2 border-white"></div>
+                        <span class="text-xs font-bold text-party bg-party_light px-2 py-1 rounded">2023年10月</span>
+                        <h3 class="font-bold text-lg text-gray-800 mt-2">老旧小区改造攻坚战</h3>
+                        <p class="text-gray-600 mt-1 text-sm leading-relaxed">老党员李建国同志主动请缨，挨家挨户做思想工作，成功推动辖区内3栋老楼加装电梯，发挥了不可替代的“主心骨”作用。</p>
+                    </div>
+
+                    <!-- 事迹 3：修改这里的文字 -->
+                    <div class="relative pl-6">
+                        <div class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-party border-2 border-white"></div>
+                        <span class="text-xs font-bold text-party bg-party_light px-2 py-1 rounded">日常坚守</span>
+                        <h3 class="font-bold text-lg text-gray-800 mt-2">网格里的“红马甲”</h3>
+                        <p class="text-gray-600 mt-1 text-sm leading-relaxed">社区网格员张阿姨，每日巡查安全隐患，调解邻里纠纷。用“绣花功夫”织就社区平安网，践行全心全意为人民服务的宗旨。</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 模块三：便民服务导航 (群众最需要的功能) -->
+        <section class="mb-10">
+            <h2 class="text-xl font-bold text-gray-800 border-l-4 border-party pl-3 mb-4">社区便民服务台</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <!-- 替换 href 里面的 "#" 为实际的网址，或保留作为演示 -->
+                <a href="#" class="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow hover:bg-party_light transition">
+                    <i class="fa-solid fa-phone-volume text-party text-xl mb-2"></i>
+                    <span class="text-sm font-bold text-gray-700">党群中心热线</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow hover:bg-party_light transition">
+                    <i class="fa-solid fa-shield-halved text-blue-500 text-xl mb-2"></i>
+                    <span class="text-sm font-bold text-gray-700">片区民警微信</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow hover:bg-party_light transition">
+                    <i class="fa-solid fa-house-medical text-green-500 text-xl mb-2"></i>
+                    <span class="text-sm font-bold text-gray-700">社区卫生服务站</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow hover:bg-party_light transition">
+                    <i class="fa-solid fa-wrench text-gray-600 text-xl mb-2"></i>
+                    <span class="text-sm font-bold text-gray-700">物业报修平台</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow hover:bg-party_light transition">
+                    <i class="fa-solid fa-book-open-reader text-purple-500 text-xl mb-2"></i>
+                    <span class="text-sm font-bold text-gray-700">理论学习专区</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow hover:bg-party_light transition">
+                    <i class="fa-solid fa-comment-dots text-orange-500 text-xl mb-2"></i>
+                    <span class="text-sm font-bold text-gray-700">居民意见信箱</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center text-sm">
+        <p>本项目由 <strong>“传青声·习党风”实践团</strong> 策划开发</p>
+        <p class="mt-1">结合《习近平著作选读》理论学习与社区实地调研成果</p>
+        <p class="mt-2 text-xs opacity-50">&copy; 2024 共建赋能基层治理</p>
+    </footer>
+
+</body>
+</html>
